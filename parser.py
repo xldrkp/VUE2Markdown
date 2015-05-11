@@ -23,28 +23,91 @@ children = d('child')
 
 
 def get_linked_nodes(child):
+    """
+    :param child: The child node on first level
+    :return: dictionary of IDs
+    """
     # Get all child elements of the link
     children_of_child = d(child).children()
-    # Store the IDs in a list
-    linked_nodes = []
 
+    # Links can have four types of arrow states:
+    # 0: no arrows at all
+    # 1: ID1 <-  ID2
+    # 2: ID1 ->  ID2
+    # 3: ID1 <-> ID2
+    arrowstate = d(child).attr('arrowstate')
+    # Store the IDs in a dictionary
+    linked_nodes = {'arrowstate': arrowstate}
+
+    # to postfix the IDs
+    counter = 1
     # Iterate over the child elements...
     for n in children_of_child:
         # ... looking for nodes
         if d(n).attr('xsi:type') == 'node':
             # put them in the list
-            linked_nodes.append(d(n).text())
-    # print the list
-    # print(linked_nodes)
+            linked_nodes['id' + str(counter)] = d(n).text()
+            counter += 1
     return linked_nodes
 
 
-def get_text_of_linked_nodes(node_list):
-    labels = []
-    for n in node_list:
-        node = d('#' + n).attr('label')
-        labels.append(node)
-    return labels
+def build_headline_for_links(link, node_dictionary):
+    """
+    Builds the headline for linked nodes
+    :param link: HTML object
+    :param node_dictionary: dictionary with IDs and arrow state
+    :return: String
+    """
+    if int(node_dictionary['arrowstate']) == 1:
+        return '### %s --%s--> %s ###\n\n' % (
+            get_label_for_linked_node(node_dictionary['id2']),
+            get_label_for_link(link),
+            get_label_for_linked_node(node_dictionary['id1'])
+        )
+
+    if int(node_dictionary['arrowstate']) == 2:
+        return '### %s --%s--> %s ###\n\n' % (
+            get_label_for_linked_node(node_dictionary['id1']),
+            get_label_for_link(link),
+            get_label_for_linked_node(node_dictionary['id2'])
+        )
+
+    if int(node_dictionary['arrowstate']) == 3:
+        return '### %s <--%s--> %s ###\n\n' % (
+            get_label_for_linked_node(node_dictionary['id1']),
+            get_label_for_link(link),
+            get_label_for_linked_node(node_dictionary['id2'])
+        )
+
+    if int(node_dictionary['arrowstate']) == 0:
+        return '### %s --%s-- %s ###\n\n' % (
+            get_label_for_linked_node(node_dictionary['id1']),
+            get_label_for_link(link),
+            get_label_for_linked_node(node_dictionary['id2'])
+        )
+    else:
+        return ''
+
+
+
+def get_label_for_linked_node(id):
+    """
+    Reads the label text for the linked node
+    :param id: the ID of the linked node
+    :return: String
+    """
+    label = d('#' + id).attr('label')
+    return label
+
+
+def get_label_for_link(l):
+    """
+    Reads the label text of a node
+    :param l: html object
+    :return: String
+    """
+    return d(l).attr('label')
+
 
 
 for t in children:
@@ -60,15 +123,12 @@ for t in children:
 
     # Get all the links
     if child_type == 'link':
-        n_list = get_linked_nodes(t)
-        end, start = get_text_of_linked_nodes(n_list)
+        n_dictionary = get_linked_nodes(t)
         notes = d(t).children('notes')
         if label:
-            file += '### %s %s %s ###\n\n' % (start, label, end)
+            file += build_headline_for_links(t, n_dictionary)
         if notes:
             file += d(notes).text() + '\n\n'
 
 f.write(file)
 f.close()
-
-
