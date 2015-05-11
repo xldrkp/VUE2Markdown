@@ -51,6 +51,16 @@ def get_linked_nodes(child):
     return linked_nodes
 
 
+def get_urlresources_if_any(n):
+    urlresource = d(n).children('resource')
+    if urlresource and urlresource.attr('xsi:type') == 'URLResource':
+        text = '#### Quelle ####\n\n'
+        text += '* ' + urlresource.children('property').attr('value') + '\n\n'
+        return text
+    else:
+        return ''
+
+
 def build_headline_for_links(link, node_dictionary):
     """
     Builds the headline for linked nodes
@@ -109,7 +119,6 @@ def get_label_for_link(l):
     return d(l).attr('label')
 
 
-
 for t in children:
     label = d(t).attr('label')
     child_type = d(t).attr('xsi:type')
@@ -120,6 +129,9 @@ for t in children:
         file += '### %s ###\n\n' % label
         if notes:
             file += d(notes).text() + '\n\n'
+        resources = get_urlresources_if_any(t)
+        if resources != '':
+            file += resources
 
     # Get all the links
     if child_type == 'link':
