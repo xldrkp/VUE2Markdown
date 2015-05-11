@@ -1,3 +1,4 @@
+#! /usr/bin/python3.4
 """ Parser and converter for VUE Concept Maps
     The intention is to convert the contents of the
     map to a markdown file in order to get a structured
@@ -7,19 +8,13 @@
     Date: 2015-05-10
 """
 
+import os
 from pyquery import PyQuery as pq
 from lxml import etree
-
-# Store the generated Markdown here
-file = ''
-
-f = open('./parsed.markdown', 'w')
 
 # I use the HTML-Parser to catch the xsi:type attributes
 # which does not work with XML parser
 d = pq(filename='./ConceptMap.vue', parser='html')
-# Get all children of the map
-children = d('child')
 
 
 def get_linked_nodes(child):
@@ -54,7 +49,7 @@ def get_linked_nodes(child):
 def get_urlresources_if_any(n):
     urlresource = d(n).children('resource')
     if urlresource and urlresource.attr('xsi:type') == 'URLResource':
-        text = '#### Quelle ####\n\n'
+        text = '#### Quelle im Netz ####\n\n'
         text += '* ' + urlresource.children('property').attr('value') + '\n\n'
         return text
     else:
@@ -69,7 +64,7 @@ def build_headline_for_links(link, node_dictionary):
     :return: String
     """
     if int(node_dictionary['arrowstate']) == 1:
-        return '### %s --%s--> %s ###\n\n' % (
+        return '### *%s --%s--> %s* ###\n\n' % (
             get_label_for_linked_node(node_dictionary['id2']),
             get_label_for_link(link),
             get_label_for_linked_node(node_dictionary['id1'])
@@ -119,28 +114,53 @@ def get_label_for_link(l):
     return d(l).attr('label')
 
 
-for t in children:
-    label = d(t).attr('label')
-    child_type = d(t).attr('xsi:type')
+def get_pdf_of_map():
+    if os.path.exists('./ConceptMap.pdf'):
+        return True
+    else:
+        return False
 
-    # Get all the nodes
-    if child_type == 'node':
-        notes = d(t).children('notes')
-        file += '### %s ###\n\n' % label
-        if notes:
-            file += d(notes).text() + '\n\n'
-        resources = get_urlresources_if_any(t)
-        if resources != '':
-            file += resources
 
-    # Get all the links
-    if child_type == 'link':
-        n_dictionary = get_linked_nodes(t)
-        notes = d(t).children('notes')
-        if label:
-            file += build_headline_for_links(t, n_dictionary)
-        if notes:
-            file += d(notes).text() + '\n\n'
+def main():
+    # Store the generated Markdown here
+    file = '# Concept Map Webtechnologien #\n\n'
 
-f.write(file)
-f.close()
+    f = open('./parsed.markdown', 'w')
+
+    # Get all children of the map
+    children = d('child')
+
+    for t in children:
+        label = d(t).attr('label')
+        child_type = d(t).attr('xsi:type')
+
+        # Get all the nodes
+        if child_type == 'node':
+            notes = d(t).children('notes')
+            file += '## %s ##\n\n' % label
+            if notes:
+                file += d(notes).text() + '\n\n'
+            resources = get_urlresources_if_any(t)
+            if resources != '':
+                file += resources
+
+        # Get all the links
+        if child_type == 'link':
+            n_dictionary = get_linked_nodes(t)
+            notes = d(t).children('notes')
+            if label:
+                file += build_headline_for_links(t, n_dictionary)
+            if notes:
+                file += d(notes).text() + '\n\n'
+
+    if get_pdf_of_map():
+        pdf_string = '\n\n![Concept Map](./ConceptMap.pdf)\n\n'
+        file += pdf_string
+
+    f.write(file)
+    f.close()
+    return 0
+
+if __name__ == '__main__':
+    main()
+

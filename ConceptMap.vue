@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.2.2 concept-map (ConceptMap.vue) 2015-05-11 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/home/duerkop/Programme/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Mon May 11 13:48:00 CEST 2015 by duerkop on platform Linux 3.13.0-24-generic in JVM 1.7.0_79-b14 -->
+<!-- Do Not Remove: Saved date Mon May 11 15:24:34 CEST 2015 by duerkop on platform Linux 3.13.0-24-generic in JVM 1.7.0_79-b14 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 23 2013 at 2146 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="ConceptMap.vue"
-    created="1430914125739" x="0.0" y="0.0" width="964.9188"
-    height="615.9147" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1431344880912" size="23988"
+    created="1430914125739" x="0.0" y="0.0" width="633.91614"
+    height="403.23087" strokeWidth="0.0" autoSized="false">
+    <resource referenceCreated="1431350674909" size="24980"
         spec="/home/duerkop/Dokumente/TUHH_lokal/Lehre/2015-SoSe-INF2/Code/Python/VUE-Parser/ConceptMap.vue"
         type="1" xsi:type="URLResource">
         <title>ConceptMap.vue</title>
@@ -23,9 +23,14 @@
     </metadata-list>
     <URIString>http://vue.tufts.edu/rdf/resource/292e67057f0000013566859e40c85165</URIString>
     <child ID="11" label="HTML" layerID="1" created="1430914643652"
-        x="86.357216" y="420.83817" width="71.0" height="27.0"
+        x="28.357216" y="347.83817" width="71.0" height="44.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
         <notes>Die Hypertext Markup Language (engl. f&#xfc;r Hypertext-Auszeichnungssprache), abgek&#xfc;rzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung digitaler Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten. </notes>
+        <resource referenceCreated="0"
+            spec="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"
+            type="2" xsi:type="URLResource">
+            <property key="URL" value="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"/>
+        </resource>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -34,7 +39,7 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="12" label="CSS" layerID="1" created="1430914674012"
-        x="347.42584" y="419.66904" width="64.0" height="44.0"
+        x="238.42584" y="399.66904" width="64.0" height="44.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
         <notes>Cascading Style Sheets, kurz CSS genannt, ist eine Gestaltungssprache f&#xfc;r elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen des World Wide Webs. Sie ist ein so genannter &#x201e;living standard&#x201c; (lebendiger Standard) und wird vom World Wide Web Consortium (W3C) best&#xe4;ndigss weiterentwickelt. Mit CSS werden Gestaltungsanweisungen erstellt, die vor allem zusammen mit den Auszeichnungssprachen HTML und XML (zum Beispiel bei SVG) eingesetzt werden.</notes>
         <resource referenceCreated="0"
@@ -50,8 +55,8 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="13" label="formatiert" layerID="1"
-        created="1430914674014" x="156.85721" y="431.5534"
-        width="191.06863" height="13.0" strokeWidth="1.0"
+        created="1430914674014" x="98.85722" y="378.2456"
+        width="140.06863" height="35.894226" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
         <notes>Mithilfe von CSS kann ein HTML-Dokument formatiert werden. Dabei werden HTML-Elemente mit so genannten Selektoren ausgew&#xe4;hlt und bez&#xfc;glich ihrer Eigenschaften ver&#xe4;ndert. CSS ist in der Lage, einzelne Informationen des Dokuments zu formatieren, aber auch das gesamte Layout des Dokumentes zu definieren.</notes>
         <strokeColor>#404040</strokeColor>
@@ -61,14 +66,19 @@
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Formatierung"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/292e67087f0000013566859e22c35d5a</URIString>
-        <point1 x="157.35721" y="435.34854"/>
-        <point2 x="347.42584" y="440.75824"/>
+        <point1 x="99.357216" y="378.7456"/>
+        <point2 x="238.42584" y="413.63983"/>
         <ID1 xsi:type="node">11</ID1>
         <ID2 xsi:type="node">12</ID2>
     </child>
     <child ID="14" label="JavaScript" layerID="1"
-        created="1430914680384" x="609.7023" y="273.91513" width="67.0"
-        height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        created="1430914680384" x="382.70227" y="316.91513" width="95.0"
+        height="44.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <notes>JavaScript (kurz JS) ist eine Skriptsprache, die urspr&#xfc;nglich f&#xfc;r dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu ver&#xe4;ndern, nachzuladen oder zu generieren und so die M&#xf6;glichkeiten von HTML und CSS zu erweitern. Heute findet JavaScript auch au&#xdf;erhalb von Browsern Anwendung, so etwa auf Servern und in Microcontrollern.</notes>
+        <resource referenceCreated="0"
+            spec="https://de.wikipedia.org/wiki/JavaScript" type="2" xsi:type="URLResource">
+            <property key="URL" value="https://de.wikipedia.org/wiki/JavaScript"/>
+        </resource>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -77,9 +87,9 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="15" label="manipuliert" layerID="1"
-        created="1430914680385" x="496.31717" y="247.966"
-        width="116.54901" height="29.771118" strokeWidth="1.0"
-        autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
+        created="1430914680385" x="334.0985" y="270.766" width="78.5"
+        height="46.64914" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="1" xsi:type="link">
         <notes>JavaScript kann auf das DOM zugreifen, Elemente auslesen und neue erstellen.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
@@ -88,21 +98,22 @@
             <md t="1" k="http://vue.tufts.edu/vue.rdfs#none" v="Manipulation"/>
         </metadata-list>
         <URIString>http://vue.tufts.edu/rdf/resource/292e670a7f0000013566859ecbbf0f75</URIString>
-        <point1 x="496.8172" y="248.466"/>
-        <point2 x="612.3662" y="277.23712"/>
+        <point1 x="344.77597" y="271.266"/>
+        <point2 x="402.42102" y="316.91513"/>
         <ID1 xsi:type="node">21</ID1>
         <ID2 xsi:type="node">14</ID2>
     </child>
     <child ID="16" label="manipuliert" layerID="1"
-        created="1430914887303" x="408.86096" y="295.41516"
-        width="216.33115" height="128.96439" strokeWidth="1.0"
-        autoSized="false" controlCount="0" arrowState="3" xsi:type="link">
+        created="1430914887303" x="301.0028" y="359.69226"
+        width="88.6189" height="46.38092" strokeWidth="1.0"
+        autoSized="false" controlCount="0" arrowState="2" xsi:type="link">
+        <notes>Hier fehlt noch eine Beschreibung.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/292e670b7f0000013566859e2d23b874</URIString>
-        <point1 x="624.69214" y="295.91513"/>
-        <point2 x="409.361" y="423.87952"/>
+        <point1 x="389.1217" y="360.19226"/>
+        <point2 x="301.5028" y="405.57318"/>
         <ID1 xsi:type="node">14</ID1>
         <ID2 xsi:type="node">12</ID2>
     </child>
@@ -135,9 +146,14 @@
         <label>ConceptMap Webtechnologien</label>
     </child>
     <child ID="21" label="DOM" layerID="1" created="1430915455532"
-        x="431.96603" y="227.03522" width="66.0" height="27.0"
+        x="284.96603" y="228.03522" width="66.0" height="44.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
         <notes>Document Object Model (DOM) ist eine Spezifikation einer Schnittstelle f&#xfc;r den Zugriff auf HTML- oder XML-Dokumente. Sie wird vom World Wide Web Consortium definiert. Eine Implementierung, die dieser Spezifikation gen&#xfc;gt, besteht im Sinne der objektorientierten Programmierung aus einem Satz von Klassen zusammen mit deren Methoden und Attributen. Sie erlaubt Computerprogrammen, dynamisch den Inhalt, die Struktur und das Layout eines Dokuments zu ver&#xe4;ndern.</notes>
+        <resource referenceCreated="0"
+            spec="https://de.wikipedia.org/wiki/Document_Object_Model"
+            type="2" xsi:type="URLResource">
+            <property key="URL" value="https://de.wikipedia.org/wiki/Document_Object_Model"/>
+        </resource>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -146,21 +162,27 @@
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
     <child ID="22" label="wird beschrieben als" layerID="1"
-        created="1430915458395" x="145.25761" y="253.40128"
-        width="296.54507" height="167.93687" strokeWidth="1.0"
+        created="1430915458395" x="97.82888" y="264.78424"
+        width="188.2931" height="89.30182" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
+        <notes>Hier fehlt noch eine Beschreibung.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/29372dfb7f0000013566859e46233aa9</URIString>
-        <point1 x="441.3027" y="253.90129"/>
-        <point2 x="145.75763" y="420.83817"/>
+        <point1 x="285.62198" y="265.28424"/>
+        <point2 x="98.32887" y="353.58606"/>
         <ID1 xsi:type="node">21</ID1>
         <ID2 xsi:type="node">11</ID2>
     </child>
     <child ID="23" label="Webserver" layerID="1" created="1430915609820"
-        x="-25.687569" y="528.49" width="70.0" height="22.0"
+        x="-83.68757" y="455.49" width="98.0" height="44.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <notes>Ein Webserver ist ein Server, der Dokumente an Clients wie z. B. Webbrowser &#xfc;bertr&#xe4;gt. Als Webserver bezeichnet man den Computer mit Webserver-Software oder nur die Webserver-Software selbst. Webserver werden lokal, in Firmennetzwerken und &#xfc;berwiegend als WWW-Dienst im Internet eingesetzt. Dokumente k&#xf6;nnen somit dem geforderten Zweck lokal, firmenintern und weltweit zur Verf&#xfc;gung gestellt werden.</notes>
+        <resource referenceCreated="0"
+            spec="https://de.wikipedia.org/wiki/Webserver" type="2" xsi:type="URLResource">
+            <property key="URL" value="https://de.wikipedia.org/wiki/Webserver"/>
+        </resource>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -168,19 +190,14 @@
         <URIString>http://vue.tufts.edu/rdf/resource/293909db7f0000013566859e1558aa23</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="26" label="Responsive Webdesign" layerID="1"
-        created="1430915641944" x="575.9394" y="576.21814" width="143.0"
-        height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
-        <fillColor>#F2AE45</fillColor>
-        <strokeColor>#776D6D</strokeColor>
-        <textColor>#000000</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/293909de7f0000013566859e76e15157</URIString>
-        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
-    </child>
     <child ID="30" label="World Wide Web" layerID="1"
-        created="1430915678171" x="120.20389" y="570.7229" width="102.0"
-        height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        created="1430915678171" x="97.20389" y="487.7229" width="130.0"
+        height="44.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <notes>Das World Wide Web, kurz Web, WWW, selten und vor allem in der Anfangszeit und den USA auch W3) ist ein &#xfc;ber das Internet abrufbares System von elektronischen Hypertext-Dokumenten, sogenannten Webseiten. Sie sind durch Hyperlinks untereinander verkn&#xfc;pft und werden im Internet &#xfc;ber die Protokolle HTTP oder HTTPS &#xfc;bertragen. Die Webseiten enthalten meist Texte, oft mit Bildern und grafischen Elementen illustriert. H&#xe4;ufig sind auch Videos, Tondokumente und Musikst&#xfc;cke eingebettet. Das WWW wurde unter Weiterentwicklung bekannter &#xe4;hnlicher Konzepte 1989 von Tim Berners-Lee und Robert Cailliau am europ&#xe4;ischen Forschungszentrum CERN entwickelt. Berners-Lee entwickelte dazu das HTTP-Kommunikationsprotokoll und die Textauszeichnungssprache HTML.</notes>
+        <resource referenceCreated="0"
+            spec="https://de.wikipedia.org/wiki/World_Wide_Web" type="2" xsi:type="URLResource">
+            <property key="URL" value="https://de.wikipedia.org/wiki/World_Wide_Web"/>
+        </resource>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -188,20 +205,15 @@
         <URIString>http://vue.tufts.edu/rdf/resource/293909e27f0000013566859e50d5fc7a</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="31" label="Media Queries" layerID="1"
-        created="1430915686051" x="514.1955" y="457.37497" width="91.0"
-        height="22.0" strokeWidth="1.0" autoSized="true" xsi:type="node">
-        <fillColor>#F2AE45</fillColor>
-        <strokeColor>#776D6D</strokeColor>
-        <textColor>#000000</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/293909e37f0000013566859edc5bb6e3</URIString>
-        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
-    </child>
     <child ID="32" label="Elemente" layerID="1" created="1430915839980"
-        x="61.584076" y="326.65012" width="92.0" height="27.0"
+        x="3.584076" y="253.65012" width="92.0" height="44.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
         <notes>HTML-Elemente sind keine Angaben zur Pr&#xe4;sentation, die dem Webbrowser mitteilen, wie er den Text visuell zu formatieren hat. Vielmehr sind Elemente eine strukturierende Auszeichnung, mit der sich Textbereichen eine Bedeutung zuordnen l&#xe4;sst, z. B. \&lt;h1&gt;&#x2026;\&lt;/h1&gt; f&#xfc;r eine &#xdc;berschrift, \&lt;p&gt;&#x2026;\&lt;/p&gt; f&#xfc;r einen Textabsatz und \&lt;em&gt;&#x2026;\&lt;/em&gt; f&#xfc;r betonten Text.</notes>
+        <resource referenceCreated="0"
+            spec="https://de.wikipedia.org/wiki/Hypertext_Markup_Language#Syntax"
+            type="2" xsi:type="URLResource">
+            <property key="URL" value="https://de.wikipedia.org/wiki/Hypertext_Markup_Language#Syntax"/>
+        </resource>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -209,9 +221,10 @@
         <URIString>http://vue.tufts.edu/rdf/resource/293d89007f0000013566859ecfc60160</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="33" label="Attribute" layerID="1" created="1430915848656"
-        x="-90.05321" y="257.0622" width="55.0" height="22.0"
+    <child ID="33" label="Attribut" layerID="1" created="1430915848656"
+        x="-148.0532" y="184.0622" width="76.0" height="27.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <notes>Oft hat ein Element einen Zusatz, um eine Eigenschaft zu beschreiben. Einen solchen Zusatz nennt man Attribut, dem ein Attributwert zugeordnet wird. Paare aus Attributnamen und Attributwert stehen immer im Start-Tag eines Elements und werden vom Elementnamen sowie voneinander durch Leerraum abgetrennt. Die Reihenfolge der Attribute eines Elements ist beliebig. Attributwerte werden entweder von doppelten (") oder einfachen (') Anf&#xfc;hrungszeichen eingeschlossen. Quelle: Jendryschik, Michael (2009): Einf&#xfc;hrung in XHTML, CSS und Webdesign: standardkonforme, moderne und barrierefreie Websites erstellen 2., aktualisierte und erw. Aufl., M&#xfc;nchen: Addison-Wesley, S. 177</notes>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -219,84 +232,42 @@
         <URIString>http://vue.tufts.edu/rdf/resource/293d89007f0000013566859eed72dfe7</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="34" label="Selektor" layerID="1" created="1430915855010"
-        x="391.9363" y="595.97687" width="56.0" height="22.0"
-        strokeWidth="1.0" autoSized="true" xsi:type="node">
-        <fillColor>#F2AE45</fillColor>
-        <strokeColor>#776D6D</strokeColor>
-        <textColor>#000000</textColor>
-        <font>Arial-plain-12</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/293d89017f0000013566859e28bfb3b9</URIString>
-        <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
-    </child>
-    <child ID="35" label="verwendet" layerID="1" created="1430915913307"
-        x="374.5289" y="463.16907" width="53.0" height="133.30774"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="1" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/293d89027f0000013566859eccdc0319</URIString>
-        <point1 x="417.24063" y="595.9768"/>
-        <point2 x="384.81717" y="463.66907"/>
-        <ID1 xsi:type="node">34</ID1>
-        <ID2 xsi:type="node">12</ID2>
-    </child>
-    <child ID="36" label="w&#xe4;hlt HTML-Element aus" layerID="1"
-        created="1430915938320" x="144.66641" y="447.33813"
-        width="257.0338" height="149.28732" strokeWidth="1.0"
-        autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/293d89037f0000013566859e0945f3a4</URIString>
-        <point1 x="145.16641" y="447.83817"/>
-        <point2 x="401.20023" y="596.1255"/>
-        <ID1 xsi:type="node">11</ID1>
-        <ID2 xsi:type="node">34</ID2>
-    </child>
     <child ID="37" label="besteht aus" layerID="1"
-        created="1430915969074" x="86.22064" y="353.15012" width="57.0"
-        height="68.18805" strokeWidth="1.0" autoSized="false"
+        created="1430915969074" x="22.720642" y="297.15012" width="67.5"
+        height="51.18805" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="1" xsi:type="link">
+        <notes>Hier fehlt noch eine Beschreibung.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/293d89047f0000013566859ecbcf471f</URIString>
-        <point1 x="109.629845" y="353.65012"/>
-        <point2 x="119.81144" y="420.83817"/>
+        <point1 x="52.917927" y="297.65012"/>
+        <point2 x="60.52336" y="347.83817"/>
         <ID1 xsi:type="node">32</ID1>
         <ID2 xsi:type="node">11</ID2>
     </child>
     <child ID="38" label="werden genauer beschrieben durch" layerID="1"
-        created="1430915980987" x="-69.69549" y="277.0701" width="175.0"
-        height="50.080017" strokeWidth="1.0" autoSized="false"
+        created="1430915980987" x="-130.1124" y="210.5622" width="185.5"
+        height="45.359222" strokeWidth="1.0" autoSized="false"
         controlCount="0" arrowState="1" xsi:type="link">
+        <notes>Hier fehlt noch eine Beschreibung.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/293d89057f0000013566859e1bfaefce</URIString>
-        <point1 x="-40.113243" y="277.5701"/>
-        <point2 x="75.72227" y="326.65012"/>
+        <point1 x="-82.45478" y="211.0622"/>
+        <point2 x="8.229981" y="255.42142"/>
         <ID1 xsi:type="node">33</ID1>
         <ID2 xsi:type="node">32</ID2>
     </child>
-    <child ID="40" layerID="1" created="1430916045882" x="410.92584"
-        y="445.90967" width="105.617004" height="16.498444"
-        strokeWidth="1.0" autoSized="false" controlCount="0"
-        arrowState="1" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/294c23367f0000013566859ef939299e</URIString>
-        <point1 x="411.42584" y="446.40964"/>
-        <point2 x="516.04285" y="461.90808"/>
-        <ID1 xsi:type="node">12</ID1>
-        <ID2 xsi:type="node">31</ID2>
-    </child>
     <child ID="42" label="Browser" layerID="1" created="1430921786328"
-        x="-96.21384" y="467.66666" width="57.0" height="22.0"
+        x="-155.21384" y="377.66666" width="85.0" height="44.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
+        <notes>Webbrowser oder allgemein auch Browser sind spezielle Computerprogramme zur Darstellung von Webseiten im World Wide Web oder allgemein von Dokumenten und Daten. Das Durchst&#xf6;bern des World Wide Webs beziehungsweise das aufeinanderfolgende Abrufen beliebiger Hyperlinks als Verbindung zwischen Webseiten mit Hilfe solch eines Programms wird auch als Internetsurfen bezeichnet. Neben HTML-Seiten k&#xf6;nnen Webbrowser verschiedene andere Arten von Dokumenten wie zum Beispiel Bilder und PDF-Dokumente anzeigen. Webbrowser stellen die Benutzeroberfl&#xe4;che f&#xfc;r Webanwendungen dar.</notes>
+        <resource referenceCreated="0"
+            spec="https://de.wikipedia.org/wiki/Webbrowser" type="2" xsi:type="URLResource">
+            <property key="URL" value="https://de.wikipedia.org/wiki/Webbrowser"/>
+        </resource>
         <fillColor>#F2AE45</fillColor>
         <strokeColor>#776D6D</strokeColor>
         <textColor>#000000</textColor>
@@ -304,55 +275,45 @@
         <URIString>http://vue.tufts.edu/rdf/resource/299e839e7f0000016208aa1e094807ee</URIString>
         <shape arcwidth="20.0" archeight="20.0" xsi:type="roundRect"/>
     </child>
-    <child ID="48" label="wird umgesetzt mit" layerID="1"
-        created="1430922828279" x="558.06744" y="478.875" width="91.0"
-        height="97.84311" strokeWidth="1.0" autoSized="false"
-        controlCount="0" arrowState="1" xsi:type="link">
-        <strokeColor>#404040</strokeColor>
-        <textColor>#404040</textColor>
-        <font>Arial-plain-11</font>
-        <URIString>http://vue.tufts.edu/rdf/resource/29a9ff2c7f0000016208aa1e9e58aa10</URIString>
-        <point1 x="567.817" y="479.37503"/>
-        <point2 x="639.3179" y="576.21814"/>
-        <ID1 xsi:type="node">31</ID1>
-        <ID2 xsi:type="node">26</ID2>
-    </child>
     <child ID="49" label="fordert an" layerID="1"
-        created="1430922843366" x="-41.4246" y="441.85684"
-        width="129.48988" height="31.045532" strokeWidth="1.0"
+        created="1430922843366" x="-70.71384" y="375.33527"
+        width="99.57105" height="17.651794" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
+        <notes>Hier fehlt noch eine Beschreibung.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/29a9ff2d7f0000016208aa1ec2cff2d8</URIString>
-        <point1 x="87.565285" y="442.35684"/>
-        <point2 x="-40.9246" y="472.40237"/>
+        <point1 x="28.357216" y="375.83527"/>
+        <point2 x="-70.21384" y="392.48706"/>
         <ID1 xsi:type="node">11</ID1>
         <ID2 xsi:type="node">42</ID2>
     </child>
     <child ID="50" label="liefert aus" layerID="1"
-        created="1430922860024" x="20.585785" y="447.33813"
-        width="87.32225" height="81.651825" strokeWidth="1.0"
+        created="1430922860024" x="-15.048721" y="391.33813"
+        width="59.267056" height="64.651825" strokeWidth="1.0"
         autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
+        <notes>Hier fehlt noch eine Beschreibung.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/29a9ff2d7f0000016208aa1e6a717d57</URIString>
-        <point1 x="107.408035" y="447.83817"/>
-        <point2 x="21.085783" y="528.49"/>
+        <point1 x="43.718334" y="391.83817"/>
+        <point2 x="-14.548721" y="455.49"/>
         <ID1 xsi:type="node">11</ID1>
         <ID2 xsi:type="node">23</ID2>
     </child>
     <child ID="54" label="ist Sprache des" layerID="1"
-        created="1430922943777" x="108.949066" y="447.33813"
-        width="76.0" height="123.884735" strokeWidth="1.0"
-        autoSized="false" controlCount="0" arrowState="1" xsi:type="link">
+        created="1430922943777" x="69.53055" y="391.33813" width="86.5"
+        height="96.884735" strokeWidth="1.0" autoSized="false"
+        controlCount="0" arrowState="1" xsi:type="link">
+        <notes>Hier fehlt noch eine Beschreibung.</notes>
         <strokeColor>#404040</strokeColor>
         <textColor>#404040</textColor>
         <font>Arial-plain-11</font>
         <URIString>http://vue.tufts.edu/rdf/resource/29a9ff307f0000016208aa1e54d82dc5</URIString>
-        <point1 x="167.52092" y="570.7229"/>
-        <point2 x="126.37723" y="447.83817"/>
+        <point1 x="146.73666" y="487.7229"/>
+        <point2 x="79.32444" y="391.83817"/>
         <ID1 xsi:type="node">30</ID1>
         <ID2 xsi:type="node">11</ID2>
     </child>
