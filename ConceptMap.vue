@@ -1,14 +1,14 @@
 <!-- Tufts VUE 3.2.2 concept-map (ConceptMap.vue) 2015-05-11 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/home/duerkop/Programme/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Mon May 11 15:42:34 CEST 2015 by duerkop on platform Linux 3.13.0-24-generic in JVM 1.7.0_79-b14 -->
+<!-- Do Not Remove: Saved date Mon May 11 16:41:51 CEST 2015 by duerkop on platform Linux 3.13.0-24-generic in JVM 1.7.0_79-b14 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 23 2013 at 2146 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="ConceptMap.vue"
     created="1430914125739" x="0.0" y="0.0" width="633.9161"
     height="403.23087" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1431351754414" size="24867"
+    <resource referenceCreated="1431355311803" size="24880"
         spec="/home/duerkop/Dokumente/TUHH_lokal/Lehre/2015-SoSe-INF2/Code/Python/VUE-Parser/ConceptMap.vue"
         type="1" xsi:type="URLResource">
         <title>ConceptMap.vue</title>

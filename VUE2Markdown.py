@@ -15,10 +15,8 @@ import os
 import re
 from pyquery import PyQuery as pq
 
-# I use the HTML-Parser to catch the xsi:type attributes
-# This seems not to work with the XML parser!
-d = pq(filename='./ConceptMap.vue', parser='html')
-
+# Filename of the VUE document
+vue_filename = 'ConceptMap.vue'
 # Filename of output Markdown file
 markdown_filename = 'parsed.markdown'
 # Headline of the document
@@ -27,6 +25,10 @@ document_headline = 'Concept Map Webtechnologien'
 pdfmap_filename = 'ConceptMap.pdf'
 # Caption below the figure of the map
 caption_pdfmap = 'Concept Map'
+
+# I use the HTML-Parser to catch the xsi:type attributes
+# This seems not to work with the XML parser!
+d = pq(filename='./ConceptMap.vue', parser='html')
 
 
 def clean_text(dirty_string):
