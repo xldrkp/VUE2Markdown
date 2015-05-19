@@ -9,7 +9,7 @@ visualizing but also for describing the nodes and the links. To do so one can us
 on a node or a link and enter remarks in the little text box. 
 
 Unfortunately VUE's functions to export or print the map are insuffient. To compensate this I wrote this little Python 
-script that generates a Markdown file which then can be converted to HTML, PDF or whatever. Have a look at the example 
-PDF.
+script that generates a Markdown file (see `ConceptMap.markdown`) which then can be converted to HTML, PDF or whatever. Have a look at the example 
+PDF `ConceptMap.pdf`.
 
 Right now it is neccessary to change names for input and output files directly in the code. Feel free to fork and enhance!
