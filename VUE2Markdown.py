@@ -18,11 +18,11 @@ from pyquery import PyQuery as pq
 # Filename of the VUE document
 vue_filename = 'ConceptMap.vue'
 # Filename of output Markdown file
-markdown_filename = 'parsed.markdown'
+markdown_filename = 'ConceptMap.markdown'
 # Headline of the document
 document_headline = 'Concept Map Webtechnologien'
-# Filename of the PDF file generated from the map
-pdfmap_filename = 'ConceptMap.pdf'
+# Filename of the PDF file generated from the map in VUE
+pdfmap_filename = 'ConceptMapScreenshot.pdf'
 # Caption below the figure of the map
 caption_pdfmap = 'Concept Map'
 
@@ -32,8 +32,7 @@ d = pq(filename='./ConceptMap.vue', parser='html')
 
 
 def clean_text(dirty_string):
-    """
-    First of all cleans line breaks from notes with regex
+    """ First of all cleans line breaks from notes with regex
     :return: String The cleaned text
     """
     regex = re.compile(r'(%nl;)+')
@@ -41,8 +40,7 @@ def clean_text(dirty_string):
 
 
 def get_linked_nodes(child):
-    """
-    Build a dictionary with IDs and arrow direction
+    """ Build a dictionary with IDs and arrow direction
     for linkes nodes
     :param child: The child node on first level
     :return: dictionary of IDs
@@ -72,8 +70,7 @@ def get_linked_nodes(child):
 
 
 def get_urlresources_if_any(n):
-    """
-    Builds a string for the URL resources of a node
+    """ Builds a string for the URL resources of a node
     :param n: Node object
     :return: String Formatted string with the URL
     """
@@ -87,8 +84,7 @@ def get_urlresources_if_any(n):
 
 
 def build_headline_for_links(link, node_dictionary):
-    """
-    Builds the headline for linked nodes
+    """ Builds the headline for linked nodes
     :param link: HTML object
     :param node_dictionary: dictionary with IDs and arrow state
     :return: String
@@ -125,8 +121,7 @@ def build_headline_for_links(link, node_dictionary):
 
 
 def get_label_for_linked_node(id):
-    """
-    Reads the label text for a linked node
+    """ Reads the label text for a linked node
     :param id: the ID of the linked node
     :return: String
     """
@@ -135,8 +130,7 @@ def get_label_for_linked_node(id):
 
 
 def get_label_for_link(l):
-    """
-    Reads the label text of a node
+    """ Reads the label text of a node
     :param l: Node object
     :return: String
     """
@@ -144,8 +138,8 @@ def get_label_for_link(l):
 
 
 def get_pdf_of_map():
-    """
-    Checks if a PDF of the map exists
+    """ Checks if a PDF of the map exists. If there is one,
+    the Markdown link will be added at the end of the document.
     :return: Boolean
     """
     if os.path.exists(pdfmap_filename):
@@ -194,6 +188,7 @@ def main():
             else:
                 file += ''
 
+    # Add a link to the PDF of the map if there is one.
     if get_pdf_of_map():
         pdf_string = '\n\n![%s](%s)\n\n' % (caption_pdfmap, pdfmap_filename)
         file += pdf_string

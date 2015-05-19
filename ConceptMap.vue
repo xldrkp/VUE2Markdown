@@ -1,14 +1,14 @@
-<!-- Tufts VUE 3.2.2 concept-map (ConceptMap.vue) 2015-05-11 -->
+<!-- Tufts VUE 3.2.2 concept-map (ConceptMap.vue) 2015-05-19 -->
 <!-- Tufts VUE: http://vue.tufts.edu/ -->
 <!-- Do Not Remove: VUE mapping @version(1.1) jar:file:/home/duerkop/Programme/VUE.jar!/tufts/vue/resources/lw_mapping_1_1.xml -->
-<!-- Do Not Remove: Saved date Mon May 11 16:41:51 CEST 2015 by duerkop on platform Linux 3.13.0-24-generic in JVM 1.7.0_79-b14 -->
+<!-- Do Not Remove: Saved date Tue May 19 14:28:15 CEST 2015 by duerkop on platform Linux 3.13.0-24-generic in JVM 1.7.0_79-b14 -->
 <!-- Do Not Remove: Saving version @(#)VUE: built May 23 2013 at 2146 by tomadm on Linux 2.6.18-348.2.1.el5 i386 JVM 1.7.0_21-b11(bits=32) -->
 <?xml version="1.0" encoding="US-ASCII"?>
 <LW-MAP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="none" ID="0" label="ConceptMap.vue"
-    created="1430914125739" x="0.0" y="0.0" width="633.9161"
+    created="1430914125739" x="0.0" y="0.0" width="767.458"
     height="403.23087" strokeWidth="0.0" autoSized="false">
-    <resource referenceCreated="1431355311803" size="24880"
+    <resource referenceCreated="1432038495909" size="24880"
         spec="/home/duerkop/Dokumente/TUHH_lokal/Lehre/2015-SoSe-INF2/Code/Python/VUE-Parser/ConceptMap.vue"
         type="1" xsi:type="URLResource">
         <title>ConceptMap.vue</title>
@@ -25,7 +25,7 @@
     <child ID="11" label="HTML" layerID="1" created="1430914643652"
         x="28.357216" y="347.83817" width="71.0" height="44.0"
         strokeWidth="1.0" autoSized="true" xsi:type="node">
-        <notes>Die Hypertext Markup Language (engl. f&#xfc;r Hypertext-Auszeichnungssprache), abgek&#xfc;rzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung digitaler Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten. </notes>
+        <notes>Die Hypertext Markup Language (engl. f&#xfc;r Hypertext-Auszeichnungssprache), abgek&#xfc;rzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung digitaler Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten.</notes>
         <resource referenceCreated="0"
             spec="https://de.wikipedia.org/wiki/Hypertext_Markup_Language"
             type="2" xsi:type="URLResource">
@@ -122,19 +122,19 @@
         <font>-plain-24</font>
         <URIString>http://vue.tufts.edu/rdf/resource/292e670c7f0000013566859e69e2353d</URIString>
         <richText>&lt;html&gt;
-  &lt;head style="color: #000000" color="#000000"&gt;
+  &lt;head color="#000000" style="color: #000000"&gt;
     &lt;style type="text/css"&gt;
       &lt;!--
-        body { font-family: Arial; font-size: 12; margin-right: 0px; margin-top: 0px; color: #000000; margin-bottom: 0px; margin-left: 0px }
-        ol { font-family: Arial; margin-top: 6; font-size: 12; list-style-position: outside; margin-left: 30; vertical-align: middle }
-        p { margin-right: 0; margin-top: 0; color: #000000; margin-bottom: 0; margin-left: 0 }
-        ul { font-family: Arial; margin-top: 6; font-size: 12; list-style-position: outside; margin-left: 30; vertical-align: middle }
+        body { margin-left: 0px; font-size: 12; font-family: Arial; margin-right: 0px; margin-bottom: 0px; margin-top: 0px; color: #000000 }
+        ol { margin-left: 30; vertical-align: middle; font-family: Arial; font-size: 12; list-style-position: outside; margin-top: 6 }
+        p { margin-left: 0; margin-right: 0; margin-bottom: 0; margin-top: 0; color: #000000 }
+        ul { margin-left: 30; vertical-align: middle; font-family: Arial; font-size: 12; list-style-position: outside; margin-top: 6 }
       --&gt;
     &lt;/style&gt;
     
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;p style="color: #000000" color="#000000"&gt;
+    &lt;p color="#000000" style="color: #000000"&gt;
       &lt;font style="font-size:24;"&gt;ConceptMap Webtechnologien&lt;/font&gt;
     &lt;/p&gt;
   &lt;/body&gt;
@@ -318,7 +318,7 @@
         width="1.4E-45" height="1.4E-45" strokeWidth="0.0" autoSized="false">
         <URIString>http://vue.tufts.edu/rdf/resource/292e670e7f0000013566859ef5a05d68</URIString>
     </layer>
-    <userZoom>0.2124531049266789</userZoom>
+    <userZoom>0.8613127511714957</userZoom>
     <userOrigin x="-227.59387" y="48.51366"/>
     <presentationBackground>#FFFFFF</presentationBackground>
     <PathwayList currentPathway="0" revealerIndex="-1">
